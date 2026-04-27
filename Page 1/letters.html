@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letters for You 💌</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&family=Caveat:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="letters-body">
+
+  <div class="petals-container" id="petals"></div>
+
+  <header class="letters-header">
+    <h1>Welcome to our little website, Pretty girl! 💕</h1>
+  </header>
+
+  <main class="letters-main">
+    <p class="letters-intro">Click an envelope to open your letter 🌸</p>
+
+    <div class="envelopes-grid">
+
+      <!-- Envelope 1 -->
+      <div class="envelope-card" onclick="openLetter(0)">
+        <div class="envelope-icon">💌</div>
+        <div class="envelope-label">When you feel overwhelmed</div>
+      </div>
+
+      <!-- Envelope 2 -->
+      <div class="envelope-card" onclick="openLetter(1)">
+        <div class="envelope-icon">💌</div>
+        <div class="envelope-label">When you feel sad</div>
+      </div>
+
+      <!-- Envelope 3 -->
+      <div class="envelope-card" onclick="openLetter(2)">
+        <div class="envelope-icon">💌</div>
+        <div class="envelope-label">When you need assurance</div>
+      </div>
+
+      <!-- Envelope 4 -->
+      <div class="envelope-card" onclick="openLetter(3)">
+        <div class="envelope-icon">💌</div>
+        <div class="envelope-label">When I miss you</div>
+      </div>
+
+      <!-- Envelope 5 -->
+      <div class="envelope-card" onclick="openLetter(4)">
+        <div class="envelope-icon">💌</div>
+        <div class="envelope-label">Open when we're together officially</div>
+      </div>
+
+      <!-- Envelope 6 -->
+      <div class="envelope-card" onclick="openLetter(5)">
+        <div class="envelope-icon">💌</div>
+        <div class="envelope-label">A letter for apology</div>
+      </div>
+
+    </div>
+
+    <!-- ===== PHOTO GALLERY ===== -->
+    <div class="gallery-section">
+      <h2 class="gallery-title">Our Little Corner bebe (tried to do them in order hehe) 🌸</h2>
+      <p class="gallery-sub">Moments I'll cherish for a lifetime 💕</p>
+      <div class="photo-grid">
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/aight4.jpg', 'Memory 1 💕')">
+          <img src="/Assets/Img/aight4.jpg" alt="Memory 1" />
+          <div class="photo-caption">Memory 1 💕</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/aight2.jpg', 'Memory 2 🌸')">
+          <img src="/Assets/Img/aight2.jpg" alt="Memory 2" />
+          <div class="photo-caption">Memory 2 🌸</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/aight3.jpg', 'Memory 3 ✨')">
+          <img src="/Assets/Img/aight3.jpg" alt="Memory 3" />
+          <div class="photo-caption">Memory 3 ✨</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/aight 1.jpg', 'Memory 4 💗')">
+          <img src="/Assets/Img/aight 1.jpg" alt="Memory 4" />
+          <div class="photo-caption">Memory 4 💗</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 5.jpg', 'Memory 5 🌷')">
+          <img src="/Assets/Img/Aight 5.jpg" alt="Memory 5" />
+          <div class="photo-caption">Memory 5 🌷</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 6.jpg', 'Memory 6 💕')">
+          <img src="/Assets/Img/Aight 6.jpg" alt="Memory 6" />
+          <div class="photo-caption">Memory 6 💕</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 7.jpg', 'Memory 7 🌸')">
+          <img src="/Assets/Img/Aight 7.jpg" alt="Memory 7" />
+          <div class="photo-caption">Memory 7 🌸</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 8.jpg', 'Memory 8 ✨')">
+          <img src="/Assets/Img/Aight 8.jpg" alt="Memory 8" />
+          <div class="photo-caption">Memory 8 ✨</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 9.jpg', 'Memory 9 💗')">
+          <img src="/Assets/Img/Aight 9.jpg" alt="Memory 9" />
+          <div class="photo-caption">Memory 9 💗</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 10.jpg', 'Memory 10 🌷')">
+          <img src="/Assets/Img/Aight 10.jpg" alt="Memory 10" />
+          <div class="photo-caption">Memory 10 🌷</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 11.jpg', 'Memory 11 💕')">
+          <img src="/Assets/Img/Aight 11.jpg" alt="Memory 11" />
+          <div class="photo-caption">Memory 11 💕</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 12.jpg', 'Memory 12 🌸')">
+          <img src="/Assets/Img/Aight 12.jpg" alt="Memory 12" />
+          <div class="photo-caption">Memory 12 🌸</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 13.jpg', 'Memory 13 ✨')">
+          <img src="/Assets/Img/Aight 13.jpg" alt="Memory 13" />
+          <div class="photo-caption">Memory 13 ✨</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 14.jpg', 'Memory 14 💗')">
+          <img src="/Assets/Img/Aight 14.jpg" alt="Memory 14" />
+          <div class="photo-caption">Memory 14 💗</div>
+        </div>
+
+        <div class="photo-item" onclick="openLightbox('/Assets/Img/Aight 15.jpg', 'Memory 15 🌷')">
+          <img src="/Assets/Img/Aight 15.jpg" alt="Memory 15" />
+          <div class="photo-caption">Memory 15 🌷</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== VIDEO PAGE BUTTON ===== -->
+    <div class="video-btn-wrap">
+      <button class="proceed-btn video-nav-btn" onclick="window.location.href='https://youtube.com/shorts/dggCpLB_wQ0?si=hgy4erXbG9BIge2f'">
+        <span>🎬 Watch Something Special</span>
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Letter Modal Overlay -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeLetter()">
+    <div class="letter-modal" onclick="event.stopPropagation()">
+      <button class="close-btn" onclick="closeLetter()">✕</button>
+      <div class="letter-wax-seal">💕</div>
+      <h2 class="letter-title" id="letterTitle"></h2>
+      <div class="letter-body" id="letterBody"></div>
+      <div class="letter-signature">With all my love, Khole 💗</div>
+    </div>
+  </div>
+
+  <!-- Lightbox — no src on img, set purely by JS -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lightboxImg" alt="Memory" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Floating petals
+    const container = document.getElementById('petals');
+    const emojis = ['🌸','🌷','💕','✨','🌼','💗'];
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.classList.add('petal');
+      p.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = (6 + Math.random() * 8) + 's';
+      p.style.animationDelay = (Math.random() * 8) + 's';
+      p.style.fontSize = (14 + Math.random() * 18) + 'px';
+      container.appendChild(p);
+    }
+
+    // ── Lightbox ──
+    const lightbox    = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCap = document.getElementById('lightboxCaption');
+
+    function openLightbox(src, caption) {
+      lightboxImg.src = src;
+      lightboxCap.textContent = caption;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+      setTimeout(() => { lightboxImg.src = ''; }, 300);
+    }
+
+    // Clicking the dark backdrop closes it; clicking the image itself does not
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox || e.target === lightboxCap) closeLightbox();
+    });
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+
+    // Escape closes both lightbox and letter modal
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') { closeLetter(); closeLightbox(); }
+    });
+  </script>
+</body>
+</html>

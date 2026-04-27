@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aight & Khole's Space</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body class="landing-body">
+
+  <!-- Floating petals -->
+  <div class="petals-container" id="petals"></div>
+
+  <div class="landing-wrapper">
+    <h1 class="landing-title">Welcome to Aight and Khole's Space</h1>
+    <p class="landing-sub">A little corner made just for you 🌸</p>
+    <button class="proceed-btn" onclick="window.location.href='letters.html'">
+      <span>Click to Proceed</span>
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    // Generate floating petals
+    const container = document.getElementById('petals');
+    const emojis = ['🌸','🌷','💕','✨','🌼','💗'];
+    for (let i = 0; i < 22; i++) {
+      const p = document.createElement('div');
+      p.classList.add('petal');
+      p.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = (6 + Math.random() * 8) + 's';
+      p.style.animationDelay = (Math.random() * 8) + 's';
+      p.style.fontSize = (14 + Math.random() * 18) + 'px';
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>
