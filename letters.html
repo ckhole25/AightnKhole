@@ -172,6 +172,10 @@
     <div class="lightbox-caption" id="lightboxCaption"></div>
   </div>
 
+  <!-- Music Button -->
+  <button id="music-btn" title="Play/Pause Music">♪</button>
+  <audio id="bg-music" loop src="music.mp3"></audio>
+
   <script src="script.js"></script>
   <script>
     // Floating petals
@@ -216,6 +220,22 @@
     // Escape closes both lightbox and letter modal
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') { closeLetter(); closeLightbox(); }
+    });
+
+    // Music
+    const btn = document.getElementById('music-btn');
+    const audio = document.getElementById('bg-music');
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = '❚❚';
+        btn.classList.add('playing');
+      } else {
+        audio.pause();
+        btn.textContent = '♪';
+        btn.classList.remove('playing');
+      }
     });
   </script>
 </body>

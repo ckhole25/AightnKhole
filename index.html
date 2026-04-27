@@ -23,6 +23,10 @@
     </button>
   </div>
 
+  <!-- Music Button -->
+  <button id="music-btn" title="Play/Pause Music">♪</button>
+  <audio id="bg-music" loop src="music.mp3"></audio>
+
   <script>
     // Generate floating petals
     const container = document.getElementById('petals');
@@ -37,6 +41,22 @@
       p.style.fontSize = (14 + Math.random() * 18) + 'px';
       container.appendChild(p);
     }
+
+    // Music
+    const btn = document.getElementById('music-btn');
+    const audio = document.getElementById('bg-music');
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = '❚❚';
+        btn.classList.add('playing');
+      } else {
+        audio.pause();
+        btn.textContent = '♪';
+        btn.classList.remove('playing');
+      }
+    });
   </script>
 </body>
 </html>
